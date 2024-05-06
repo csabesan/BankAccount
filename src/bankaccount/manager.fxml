@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bankaccount.ManagerController">
+    <children>
+        <!-- Title Label -->
+        <Label text="Manager Interface" style="-fx-font-size: 24px;" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="20.0" alignment="CENTER"/>
+
+        <!-- Add Customer Section -->
+        <Label layoutX="40.0" layoutY="70.0" text="Add Customer" />
+        <Label layoutX="40.0" layoutY="110.0" text="Username:" />
+        <TextField fx:id="newUsernameField" layoutX="120.0" layoutY="105.0" prefWidth="200.0" promptText="New Username" />
+        <Label layoutX="40.0" layoutY="150.0" text="Password:" />
+        <PasswordField fx:id="newPasswordField" layoutX="120.0" layoutY="145.0" prefWidth="200.0" promptText="New Password" />
+        <Button fx:id="addCustomerButton" layoutX="150.0" layoutY="190.0" prefWidth="100.0" mnemonicParsing="false" onAction="#addCustomer" text="Add Customer" />
+
+        <!-- Delete Customer Section -->
+        <Label layoutX="40.0" layoutY="250.0" text="Delete Customer" />
+        <Label layoutX="40.0" layoutY="290.0" text="Username to Delete:" />
+        <TextField fx:id="deleteUsernameField" layoutX="160.0" layoutY="285.0" prefWidth="200.0" promptText="Username to Delete" />
+        <Button fx:id="deleteCustomerButton" layoutX="150.0" layoutY="330.0" prefWidth="100.0" mnemonicParsing="false" onAction="#deleteCustomer" text="Delete Customer" />
+
+        <!-- Manager Message Label -->
+        <Label fx:id="managerMessageLabel" layoutX="40.0" layoutY="370.0" />
+
+        <!-- Logout Button -->
+        <Button fx:id="logoutButton" layoutX="480.0" layoutY="370.0" prefWidth="80.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+    </children>
+</AnchorPane>
