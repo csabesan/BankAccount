@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bankaccount.CustomerController">
+    <children>
+        <!-- Title Label -->
+        <Label text="BANK ACCOUNT" style="-fx-font-size: 24px;" layoutX="40.0" layoutY="20.0" alignment="CENTER"/>
+
+        <!-- Balance Label -->
+        <Label text="Balance: $" fx:id="balanceLabel" layoutX="40.0" layoutY="70.0" />
+
+        <!-- Level Label -->
+        <Label text="Level: " fx:id="levelLabel" layoutX="40.0" layoutY="90.0" />
+
+        <!-- Deposit Section -->
+        <Label text="Deposit" layoutX="40.0" layoutY="130.0" />
+        <TextField fx:id="depositAmountField" layoutX="40.0" layoutY="150.0" prefWidth="200.0" promptText="Enter deposit amount" />
+        <Button text="Deposit" layoutX="260.0" layoutY="150.0" mnemonicParsing="false" onAction="#deposit" />
+
+        <!-- Withdraw Section -->
+        <Label text="Withdraw" layoutX="40.0" layoutY="190.0" />
+        <TextField fx:id="withdrawAmountField" layoutX="40.0" layoutY="210.0" prefWidth="200.0" promptText="Enter withdraw amount" />
+        <Button text="Withdraw" layoutX="260.0" layoutY="210.0" mnemonicParsing="false" onAction="#withdraw" />
+
+        <!-- Online Purchase Section -->
+        <Label text="Online Purchase" layoutX="40.0" layoutY="250.0" />
+        <TextField fx:id="purchaseAmountField" layoutX="40.0" layoutY="270.0" prefWidth="200.0" promptText="Enter purchase amount" />
+        <Button text="Purchase" layoutX="260.0" layoutY="270.0" mnemonicParsing="false" onAction="#purchaseOnline" />
+
+        <!-- Insufficient Funds Label -->
+        <Label fx:id="insufficientFundsLabel" layoutX="40.0" layoutY="310.0"/>
+        
+        <!-- Logout Button -->
+        <Button fx:id="logoutButton" layoutX="480.0" layoutY="370.0" prefWidth="80.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+    </children>
+</AnchorPane>
+

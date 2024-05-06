@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bankaccount.LoginController">
+    <children>
+        <!-- Title Label -->
+        <Label text="Bank Application" style="-fx-font-size: 24px;" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0" alignment="CENTER"/>
+
+        <!-- User Label and Field -->
+        <Label layoutX="150.0" layoutY="124.0" text="Username" />
+        <TextField fx:id="usernameField" layoutX="250.0" layoutY="120.0" />
+
+        <!-- Password Label and Field -->
+        <Label layoutX="150.0" layoutY="163.0" text="Password" />
+        <PasswordField fx:id="passwordField" layoutX="250.0" layoutY="160.0" />
+
+        <!-- Login Button -->
+        <Button fx:id="loginButton" layoutX="295.0" layoutY="220.0" mnemonicParsing="false" onAction="#login" text="Login" />
+
+        <!-- Message Label -->
+        <Label fx:id="messageLabel" layoutX="229.0" layoutY="300.0" />
+    </children>
+</AnchorPane>
